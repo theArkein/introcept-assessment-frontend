@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introcept Job Assessment</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="css/add-client.css">
+
+<body>
+    <div class="wrapper form">
+        <div class="row">
+            <div class="col-5 left">
+                <div class="head">Introcept</div>
+                <div class="sub-head">Assessment For Full Stack Web Developer Job </div>
+                <p>The assessment is to create simple CRUD application(both frontend and backend). The application
+                    should
+                    have a form to add client details. The client details should be saved in csv file in the server. The
+                    application should
+                    be able to fetch and show the saved client details.
+                </p>
+            </div>
+            <div class="col-7 offset-5 right">
+                <a href="main.html" class="go-back">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26" height="26"
+                            viewBox="0 0 172 172" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <path
+                                    d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                                    fill="#000000"></path>
+                                <g fill="#ffffff">
+                                    <path
+                                        d="M97.25142,31.64531l-54.35469,54.35469l54.35469,54.35468l13.43127,-13.43127l-40.92341,-40.92341l40.92341,-40.92341z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <span class="label">Go back</span>
+                </a>
+                <form>
+                    <div class="row g-4">
+                        <div class="col-sm-6">
+                            <label for="firstname" class="form-label">Firstname</label>
+                            <input type="text" class="form-control" id="firstname" name="firstname"
+                                placeholder="firstname" required>
+                            <div class="firstname feedback"></div>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="lastname" class="form-label">Lastname</label>
+                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="lastname"
+                                required>
+                            <div class="lastname feedback"></div>
+
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="email"
+                                required>
+                            <div class="email feedback"></div>
+
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" pattern="^\d{10}$" class="form-control" id="phone" name="phone"
+                                placeholder="phone" required>
+                            <div class="phone feedback"></div>
+
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="dob" class="form-label">Date of Birth</label>
+                            <input type="date" class="form-control" id="dob" name="dob" placeholder="dob" required>
+                            <div class="dob feedback"></div>
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="form-label">Nationality</label>
+                            <select class="form-select" aria-label="Select Nationality" name="nationality" required>
+                                <option disabled>Select Nationality</option>
+                                <option selected value="Nepalese">Nepalese</option>
+                                <option value="Indian">Indian</option>
+                                <option value="Bhutanese">Bhutanese</option>
+                                <option value="Bangladeshi">Bangladeshi</option>
+                                <option value="Sri Lankan">Sri Lankan</option>
+                                <option value="Pakistani">Pakistani</option>
+                                <option value="Maldivian">Maldivian</option>
+                                <option value="Afghan">Afghan</option>
+                            </select>
+                            <div class="nationality feedback"></div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="">
+                                <label class="form-label">Gender</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="male" value="Male"
+                                    required>
+                                <label class="form-check-label" for="male">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="female" value="Female"
+                                    required>
+                                <label class="form-check-label" for="female">Female</label>
+                            </div>
+                            <div class="gender feedback"></div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="address" name="address"
+                                required>
+                            <div class="address feedback"></div>
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="form-label">Education Level</label>
+                            <select class="form-select" aria-label="Select Education Level" name="educationLevel"
+                                required>
+                                <option disabled>Select Education Level</option>
+                                <option selected value="School">School</option>
+                                <option value="Diploma">Diploma</option>
+                                <option value="Udergraduate">Undergraduate</option>
+                                <option value="Gradute">Graduate</option>
+                                <option value="Doctoral">Doctoral</option>
+                            </select>
+                            <div class="educationLevel feedback"></div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="">
+                                <label class="form-label">Preferred mode of contact</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="contactMode" id="contactMode-phone"
+                                    value="Phone" required>
+                                <label class="form-check-label" for="contactMode-phone">Phone</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="contactMode" id="contactMode-email"
+                                    value="Email" required>
+                                <label class="form-check-label" for="contactMode-email">Email</label>
+                            </div>
+                            <div class="contactMode feedback"></div>
+                        </div>
+                        <div class="col-sm-6">
+                            <button type="submit" class="btn btn-submit">Add Client</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="loader">
+        Please wait, Sending client details ...<br>
+    </div>
+</body>
+<script src="js/add-client.js"></script>
+
+</html>

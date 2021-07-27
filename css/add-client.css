@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap');
+
+
+.form .left{
+    height: 100vh;
+    width: 40%;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    font-family: 'Alfa slab one';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.form .right{
+    width: 60%;
+}
+
+.form .left .head{
+    font-size: 80px;
+}
+
+.form .left .sub-head{
+    font-size: 16px;
+}
+
+.form .left p{
+    font-size: 15px;
+    font-family: 'Roboto slab';
+    color: #fff;
+    font-weight: 400;
+    padding: 40px 80px;
+}
+
+.form .right {
+    padding: 50px 80px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form .btn-submit{
+    background-color: #000;
+    color: #fff;
+    font-family: 'Alfa slab one';
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.form .btn-submit:hover{
+    color: #fff
+}
+
+.form .go-back{
+    text-decoration: none;
+    font-family: 'Alfa slab one';
+    color: #000;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.form .feedback{
+    font-size: 14px;
+    margin: 6px 0px;
+    display: none;
+}
+.form .feedback.error{
+    color: red;
+}
+.form .feedback.green{
+    color: red;
+}
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-family: 'Alfa slab One', cursive;
+    font-size: 32px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
