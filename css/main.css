@@ -125,3 +125,105 @@ a.btn{
     cursor: pointer;
     font-family: 'Roboto slab';
 }
+
+.view-client-detail-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top:0;
+    left:0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-client-detail-wrapper .client-detail-card{
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius:8px;
+    box-shadow: 4px 6px 4px 0px rgba(132, 132, 132, 0.25);
+    margin-bottom: 28px;
+    margin-right: 28px;
+}
+.view-client-detail-wrapper .client-detail-card .left{
+    height: 100%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+}
+
+.view-client-detail-wrapper .client-detail-card .right{
+    height: 100%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.view-client-detail-wrapper .client-detail-card .icon{
+    background-color: #fff;
+    color: #000;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-family: 'Alfa slab one';
+    font-size: 64px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.view-client-detail-wrapper .client-detail-card .name{
+    font-family: 'Alfa slab one';
+    font-size: 24px;
+}
+
+.view-client-detail-wrapper .client-detail-card .detail-view-btn{
+    border: none;
+    padding: 4px 8px;
+    font-size: 12px;
+    margin-top: 4px;
+    background-color: #222;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Roboto slab';
+}
+
+.view-client-detail-wrapper .client-detail-card .details{
+    font-family: 'Roboto slab';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.close-btn{
+    position: fixed;
+    top: 40px;
+    right: 80px;
+    font-size: 40px;
+    font-family: 'alfa slab one';
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1em;
+    cursor: pointer;
+}
+
+.close-btn span:last-child{
+    font-size: 30px;
+}
